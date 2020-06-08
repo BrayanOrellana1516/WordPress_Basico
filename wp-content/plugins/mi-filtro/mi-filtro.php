@@ -4,7 +4,7 @@ Plugin Name: mi-filtro
 Plugin URI: programadornovato.com
 Description: Este pluging agrega texto antes del titulo
 Version: 1.0.0
-Author: Eugenio Chaparro
+Author: Brayan Orellana
 Author URI: programadornovato.com
 License: GPLv2
 */
@@ -16,7 +16,7 @@ add_filter("the_content", "mi_filtroEditaContenido");
 */
 if(!function_exists("mi_filtroAgregaTitulo")){
     function mi_filtroAgregaTitulo($textoDelTitulo){
-        return "Texto extra ".$textoDelTitulo;
+        return "Texto extra recargado antes del titulo ".$textoDelTitulo;
     }
 }
 /*
